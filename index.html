@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VINCE PORTFOLIO</title>
+<meta name="description" content="Vince Alvendia — BSIT student at Saint Louis College, San Fernando City, La Union. Web, systems, and apps built beyond the requirements. Open for OJT & internships.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF5400'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='14' font-weight='900' text-anchor='middle' fill='black'%3EVA%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="index.css?v=2.1">
+<style>
+  /* Responsive Layout Stability & Zoom Protection */
+  html {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  img, svg, video, canvas {
+    max-width: 100%;
+  }
+
+  /* 3D Flip Card - Stable Geometry & Proportions Across All Zoom Levels */
+  .flip-card {
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+    height: 610px;
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transition: transform .7s cubic-bezier(.4,0,.2,1);
+    -webkit-transition: -webkit-transform .7s cubic-bezier(.4,0,.2,1);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    will-change: transform;
+  }
+  .flip-card:hover .flip-card-inner,
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+  .flip-face {
+    position: absolute !important;
+    inset: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    backface-visibility: hidden !important;
+    -webkit-backface-visibility: hidden !important;
+    overflow: hidden !important;
+    border-radius: 2px !important;
+    transform: rotateY(0deg) translateZ(1px) !important;
+    -webkit-transform: rotateY(0deg) translateZ(1px) !important;
+    transform-origin: 50% 50% !important;
+  }
+  .flip-back {
+    transform: rotateY(180deg) translateZ(1px) !important;
+    -webkit-transform: rotateY(180deg) translateZ(1px) !important;
+  }
+  .profile-img-wrap {
+    position: relative !important;
+    height: 71% !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    background: #0a0a0a !important;
+    box-sizing: border-box !important;
+  }
+  .profile-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 15% !important;
+    filter: contrast(1.05) brightness(0.95) !important;
+    transition: filter .5s, transform .6s !important;
+    display: block !important;
+  }
+  .flip-back .profile-img-wrap img {
+    object-position: center 25% !important;
+  }
+  .flip-card:hover .profile-img-wrap img {
+    filter: contrast(1.02) brightness(1.02) !important;
+    transform: scale(1.03) !important;
+  }
+  @media (max-width: 1024px) {
+    .flip-card {
+      max-width: 100%;
+      height: 580px;
+    }
+  }
+  @media (max-width: 640px) {
+    .flip-card {
+      height: 520px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div id="printHeader">
+  <div class="font-display" style="font-size:42px; line-height:.9;">VINCE ALVENDIA</div>
+  <div class="font-mono" style="font-size:11px; letter-spacing:.15em; margin-top:4px; text-transform:uppercase;">
+    BSIT Student — Saint Louis College · San Fernando City, La Union, PH
+  </div>
+  <div class="font-mono" style="font-size:10px; margin-top:3px;">
+    vnce.alvendia@gmail.com · Open for OJT &amp; internships 2026–2027
+  </div>
+</div>
+
+<div id="preloader">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 bg-[var(--accent)] flex items-center justify-center font-display text-black text-xl leading-none">VA</div>
+    <div class="font-display text-3xl tracking-wide">VINCE ALVENDIA</div>
+  </div>
+  <div class="font-mono text-5xl text-[var(--accent)]" id="plNum">000</div>
+  <div class="w-[220px] h-px bg-white/10"><div class="h-full bg-[var(--accent)]" id="plBar" style="width:0%"></div></div>
+  <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.3em] uppercase">Rendering 6 live scenes…</div>
+</div>
+
+<div class="grain"></div>
+
+
+
+<div class="work-preview" id="workPreview">
+  <img id="vpImg" src="" alt="">
+  <div class="vp-tag" id="vpTag"></div>
+</div>
+
+<div class="toast" id="toast" role="status">
+  <div class="flex items-start gap-3">
+    <i class="fas fa-bolt text-[var(--accent)] mt-1"></i>
+    <div>
+      <div class="font-heading text-sm tracking-[.15em] uppercase" id="toastTitle"></div>
+      <p class="text-xs text-[var(--fg-dim)] mt-1 leading-relaxed" id="toastMsg"></p>
+    </div>
+  </div>
+</div>
+
+<header class="fixed top-0 inset-x-0 z-[100] backdrop-blur-md bg-black/65 border-b border-white/10">
+  <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-3.5 flex items-center justify-between gap-2 sm:gap-4 lg:gap-6 min-w-0">
+    <a href="#hero" class="flex items-center gap-3.5 group shrink-0">
+      <div class="relative w-10 h-10 rounded-lg overflow-hidden border border-[var(--accent)]/60 group-hover:border-[var(--accent)] transition-all shadow-[0_0_15px_rgba(255,84,0,0.25)] shrink-0">
+        <img src="images/profile.png" alt="Vince Alvendia" class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500">
+      </div>
+      <div>
+        <div class="font-display text-2xl leading-none tracking-wide text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">VINCE ALVENDIA</div>
+        <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.3em] mt-0.5">BSIT · ASPIRING DEVELOPER</div>
+      </div>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-10">
+      <a href="#works" class="nav-link">Works</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#capabilities" class="nav-link">Skills</a>
+      <a href="#words" class="nav-link">Words</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-2 font-mono text-[11px] text-[var(--muted)]">
+        <i class="fas fa-location-dot text-[var(--accent)]"></i>
+        <span class="js-clock">--:--:--</span>
+        <span>LA UNION, PH</span>
+      </div>
+
+      <!-- THEME TOGGLE (Dark / Light) -->
+      <button id="themeToggle" class="theme-toggle-btn flex items-center justify-center w-9 h-9 border border-[var(--border-light)] hover:border-[var(--accent)] text-[var(--fg)] hover:text-[var(--accent)] transition-all rounded-sm bg-transparent" aria-label="Toggle Light and Dark Mode" title="Toggle Light / Dark Mode">
+        <i class="fas fa-sun text-sm hidden" id="themeSun"></i>
+        <i class="fas fa-moon text-sm" id="themeMoon"></i>
+      </button>
+
+      <a href="#contact" class="hidden sm:inline-block font-heading text-xs tracking-[.2em] uppercase text-black bg-[var(--silver)] px-5 py-2.5 hover:bg-[var(--accent)] hover:text-black transition-colors">
+        Recruit Me
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO — 6 live scenes, one per IT discipline -->
+<section class="relative min-h-screen w-full flex flex-col justify-between overflow-hidden pt-28 pb-12 lg:pt-32 lg:pb-16" id="hero" style="min-height:100svh">
+  <div class="absolute inset-0" id="reelContainer" aria-hidden="true">
+    <div class="reel-frame active"><canvas></canvas></div>
+    <div class="reel-frame"><canvas></canvas></div>
+    <div class="reel-frame"><canvas></canvas></div>
+    <div class="reel-frame"><canvas></canvas></div>
+    <div class="reel-frame"><canvas></canvas></div>
+    <div class="reel-frame"><canvas></canvas></div>
+  </div>
+
+  <div class="hero-overlay"></div>
+  <div class="scan-line"></div>
+
+  <div class="absolute top-28 right-6 lg:right-10 z-20 flex items-center gap-5">
+    <div class="hidden md:flex items-center gap-3 font-mono text-[11px] text-[var(--fg-dim)]">
+      <span class="rec-dot w-2 h-2 bg-[var(--accent)] rounded-full inline-block"></span>
+      <span class="tracking-[.2em]">REEL — LIVE</span>
+    </div>
+  </div>
+
+  <div class="hidden md:flex absolute right-8 bottom-40 z-20 items-center gap-4">
+    <div class="scroll-cue-line"></div>
+    <div class="vertical-text font-mono text-[10px] tracking-[.35em] text-[var(--muted)] uppercase">Scroll</div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-[1600px] mx-auto px-6 lg:px-10 flex-1 flex flex-col justify-between">
+    <div class="max-w-5xl">
+      <div class="reveal in-view flex flex-wrap items-center gap-3 mb-6" style="--delay:.2s">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-black/70 backdrop-blur-md border border-[var(--border-light)] hover:border-[var(--accent)]/50 rounded-full transition-colors shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+          <div class="relative w-6 h-6 rounded-full overflow-hidden border border-[var(--accent)] shrink-0">
+            <img src="images/profile.png" alt="Vince Alvendia" class="w-full h-full object-cover object-top">
+          </div>
+          <span class="font-mono text-[11px] text-[var(--fg)] tracking-wider">VINCE ALVENDIA</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse"></span>
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-widest uppercase">BSIT '26</span>
+        </div>
+        <div class="section-marker">
+          <span>PORTFOLIO 2026–2027 · LA UNION, PH</span>
+        </div>
+      </div>
+      <h1 class="font-display leading-[0.85] mb-8">
+        <span class="headline-line"><span>BUILT BY</span></span>
+        <span class="headline-line"><span class="text-stroke">CURIOSITY.</span></span>
+        <span class="headline-line"><span>FORGED IN <span class="text-[var(--accent)]">CODE.</span></span></span>
+      </h1>
+      <p class="reveal max-w-xl text-[var(--fg-dim)] text-base md:text-lg leading-relaxed font-body" style="--delay:.45s">
+        I'm Vince a BSIT student at Saint Louis College, La Union, building systems, breaking them,
+        and rebuilding them better. I don't have a decade of experience yet. I have something that works
+        harder: <span class="text-[var(--fg)]">I'm still hungry, and I ship.</span>
+      </p>
+    </div>
+
+    <div class="reveal mt-12 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8" style="--delay:.6s">
+      <div class="flex items-center gap-4">
+        <span class="rec-dot w-2.5 h-2.5 bg-[var(--accent)] rounded-full inline-block shrink-0"></span>
+        <div>
+          <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase">Status</div>
+          <div class="font-heading text-sm tracking-wider text-[var(--fg)]">OPEN FOR OJT &amp; INTERNSHIPS — AY 2026–2027</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 max-w-md w-full lg:w-auto">
+        <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em]">
+          <span id="chapterNum">01</span> / 06
+        </div>
+        <div class="flex-1 progress-bar">
+          <div class="progress-bar-fill" id="reelProgress"></div>
+        </div>
+        <div class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]" id="reelLabel">SHOWREEL — CODE RAIN</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 left-0 right-0 border-t border-white/5 bg-black/60 backdrop-blur-sm py-3 overflow-hidden z-10">
+    <div class="marquee-track font-display text-sm tracking-[.25em] text-[var(--silver-dim)]">
+      <span class="px-8">LEARN BUILD REPEAT</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">BUILT BEYOND REQUIREMENTS</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">NO SHORTCUTS</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">DEBUG TO LEARN</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">SHIP TO GROW</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">LEARN BUILD REPEAT</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">BUILT BEYOND REQUIREMENTS</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">NO SHORTCUTS</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">DEBUG TO LEARN</span><span class="text-[var(--accent)]">/</span>
+      <span class="px-8">SHIP TO GROW</span><span class="text-[var(--accent)]">/</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="border-y border-[var(--border)] bg-[var(--bg-darker)]">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10 py-16 lg:py-20">
+    <div class="section-marker mb-10 reveal"><span>00 — Vital Signs</span></div>
+    <div class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6">
+      <div class="border-l border-[var(--border-light)] pl-6">
+        <div class="font-display text-6xl md:text-7xl number-display" data-count="3" data-pad="2">00</div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.2em] uppercase mt-2">Years writing code</div>
+      </div>
+      <div class="border-l border-[var(--border-light)] pl-6">
+        <div class="font-display text-6xl md:text-7xl text-[var(--accent)] number-display" data-count="24" data-suffix="+">0</div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.2em] uppercase mt-2">Projects &amp; counting</div>
+      </div>
+      <div class="border-l border-[var(--border-light)] pl-6">
+        <div class="font-display text-6xl md:text-7xl number-display" data-count="12">0</div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.2em] uppercase mt-2">Technologies explored</div>
+      </div>
+      <div class="border-l border-[var(--border-light)] pl-6">
+        <div class="font-display text-6xl md:text-7xl number-display" data-count="5" data-pad="2">00</div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.2em] uppercase mt-2">Certs &amp; hackathons</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="relative py-28 lg:py-36" id="works">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+
+    <div class="reveal grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-7">
+        <div class="section-marker mb-6"><span>01 — Selected Works</span></div>
+        <h2 class="font-display text-6xl md:text-7xl lg:text-8xl leading-[0.9]">
+          WORK BEGINS<br>
+          <span class="text-stroke">WHERE</span><br>
+          REQUIREMENTS <span class="text-[var(--accent)]">END.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex flex-col justify-end gap-6">
+        <p class="text-[var(--fg-dim)] text-base leading-relaxed">
+          Real-world systems, client portals, and engineering builds: official tourism portals, commercial space leasing platforms, conversational AI workspaces, grading dashboards, and productivity tools.
+          Hover to preview. Click for the full debrief.
+        </p>
+        <div class="flex flex-wrap gap-2.5" id="filterBar">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="system">Systems</button>
+          <button class="pill" data-filter="web">Web</button>
+          <button class="pill" data-filter="app">Apps</button>
+          <button class="pill" data-filter="experiment">Experiments</button>
+        </div>
+        <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase">10 projects · 2023 → 2027</div>
+      </div>
+    </div>
+
+    <div class="work-list reveal-stagger" id="workList">
+
+      <button class="work-row" data-cat="system" data-i="0" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">01</span>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-3">
+              <h3 class="row-title font-display text-3xl md:text-5xl leading-none">INTAN ELYU</h3>
+              <span class="px-2 py-0.5 bg-[var(--accent)] text-black font-mono text-[9px] font-bold tracking-widest uppercase rounded-sm">FEATURED</span>
+            </div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">SYSTEM — LA UNION TOURISM PORTAL &amp; PICTO ADMIN</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2026</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">VANILLA PHP · JS · MYSQL · LARAVEL</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="system" data-i="1" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">02</span>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-3">
+              <h3 class="row-title font-display text-3xl md:text-5xl leading-none">SKY MALL WEB SYSTEM</h3>
+              <span class="px-2 py-0.5 bg-[var(--accent)] text-black font-mono text-[9px] font-bold tracking-widest uppercase rounded-sm">FEATURED</span>
+            </div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">SYSTEM — COMMERCIAL SPACE &amp; LEASING (MANNA MALL)</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2026</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">REACT · BOOTSTRAP · CSS · PYTHON</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="app" data-i="2" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">03</span>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-3">
+              <h3 class="row-title font-display text-3xl md:text-5xl leading-none">AURALIS AI</h3>
+              <span class="px-2 py-0.5 bg-[var(--accent)] text-black font-mono text-[9px] font-bold tracking-widest uppercase rounded-sm">FEATURED</span>
+            </div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">APP — CONVERSATIONAL AI &amp; LLM WORKSPACE</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2026</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">VANILLA PHP · LARAVEL · MYSQL · REST API</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="system" data-i="3" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">04</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">LOUISGRADE</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">SYSTEM — STUDENT RECORDS &amp; GRADING</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2024</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">PHP · MYSQL · BOOTSTRAP</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="system" data-i="4" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">05</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">PUROKCONNECT</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">SYSTEM — BARANGAY SERVICES &amp; QUEUE</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2024</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">PHP · MYSQL · TAILWIND</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="web" data-i="5" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">06</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">KABSAT</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">WEB — LA UNION LOCAL DIRECTORY</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2023</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">HTML · CSS · VANILLA JS</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="app" data-i="6" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">07</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">QUIZFORGE</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">APP — REVIEW COMPANION &amp; PWA</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2023</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">JAVASCRIPT · LOCALSTORAGE · PWA</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="app" data-i="7" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">08</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">TASKFLOW</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">APP — PERSONAL KANBAN</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2024</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">REACT · VITE</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="system" data-i="8" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">09</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">SITS ATTENDANCE</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">SYSTEM — STUDENT ATTENDANCE MANAGEMENT</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2026</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">VANILLA PHP · CSS · BOOTSTRAP · PHP BACKEND</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+      <button class="work-row" data-cat="web" data-i="9" aria-haspopup="dialog">
+        <div class="flex items-center gap-5 md:gap-8 py-6 md:py-7 px-2 md:px-4">
+          <span class="row-num font-mono text-xs w-8 shrink-0">10</span>
+          <div class="flex-1 min-w-0">
+            <h3 class="row-title font-display text-3xl md:text-5xl leading-none">ANWATCH</h3>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase mt-2">WEB — ANIME STREAMING CATALOG</div>
+          </div>
+          <span class="hidden md:inline font-mono text-xs text-[var(--fg-dim)] shrink-0">2026</span>
+          <span class="hidden lg:inline font-mono text-[11px] text-[var(--muted)] tracking-[.12em] shrink-0">VANILLA PHP · CSS · BOOTSTRAP · PHP BACKEND</span>
+          <i class="fas fa-arrow-right row-arrow shrink-0 text-sm"></i>
+        </div>
+      </button>
+
+    </div>
+
+    <div class="reveal mt-10">
+      <a href="#contact" class="link-underline font-heading text-sm tracking-[.15em] uppercase text-[var(--fg-dim)] hover:text-[var(--fg)] transition-colors">
+        Ask about the rest · every semester ships more
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="relative py-28 lg:py-36 border-t border-[var(--border)] bg-[var(--bg-darker)]" id="about">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 items-start">
+
+      <div class="lg:col-span-7 reveal">
+        <div class="section-marker mb-6"><span>02 — The Builder</span></div>
+        <h2 class="font-display text-6xl md:text-7xl lg:text-8xl leading-[0.9] mb-10">
+          STILL LEARNING.<br>
+          <span class="text-stroke">ALREADY</span> <span class="text-[var(--accent)]">SHIPPING.</span>
+        </h2>
+        <p class="text-[var(--fg-dim)] text-lg leading-relaxed mb-6">
+          A few years ago I wrote my first line of HTML for a school requirement, then stayed up
+          all night making it perfect. Nobody asked me to. That's still the pattern: I treat
+          coursework like client work, with real deadlines, real users, and standards I set
+          myself. <span class="text-[var(--fg)]">The degree is still in the forge, the work isn't waiting for it.</span>
+        </p>
+        <p class="text-[var(--fg-dim)] text-base leading-relaxed mb-8">
+          Right now I'm looking for an OJT placement or internship where the work is real.
+          I show up early, ask questions until they're answered, and ship things that work.
+          One warning: I document everything.
+        </p>
+
+        <!-- CURRENTLY BUILDING & LEARNING -->
+        <div class="mb-12 pt-6 border-t border-[var(--border-light)]">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <div class="font-mono text-[11px] text-[var(--fg)] tracking-[.2em] uppercase font-bold">
+              CURRENTLY BUILDING &amp; LEARNING
+            </div>
+            <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/70 border border-[var(--accent)]/40 rounded-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse"></span>
+              <span class="font-mono text-[9px] text-[var(--accent)] tracking-[.18em] font-semibold uppercase">ACTIVE LEARNING MODE</span>
+            </div>
+          </div>
+
+          <p class="text-[var(--fg-dim)]/80 text-xs md:text-sm leading-relaxed mb-6 font-body">
+            Technology never stays still and neither do I. I'm continuously expanding my skill set through hands-on projects, experimentation, and building real applications. Every project is an opportunity to learn something new, solve a better problem, and ship stronger work than before.
+          </p>
+
+          <div class="space-y-4">
+            <!-- 01 FRONTEND -->
+            <div class="learning-category-row">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase sm:w-48 shrink-0 flex items-center gap-2">
+                <span class="text-[var(--accent)]">01 /</span> FRONTEND DEVELOPMENT
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge primary">React</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Responsive Design</span>
+              </div>
+            </div>
+
+            <!-- 02 BACKEND -->
+            <div class="learning-category-row">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase sm:w-48 shrink-0 flex items-center gap-2">
+                <span class="text-[var(--accent)]">02 /</span> BACKEND &amp; APIs
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge primary">Laravel</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">REST APIs</span>
+              </div>
+            </div>
+
+            <!-- 03 DATABASE -->
+            <div class="learning-category-row">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase sm:w-48 shrink-0 flex items-center gap-2">
+                <span class="text-[var(--accent)]">03 /</span> DATABASE SYSTEMS
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge primary">MySQL</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Database Design</span>
+              </div>
+            </div>
+
+            <!-- 04 MOBILE -->
+            <div class="learning-category-row">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase sm:w-48 shrink-0 flex items-center gap-2">
+                <span class="text-[var(--accent)]">04 /</span> MOBILE DEVELOPMENT
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge primary">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Mobile Development</span>
+              </div>
+            </div>
+
+            <!-- 05 TOOLS -->
+            <div class="learning-category-row">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.18em] uppercase sm:w-48 shrink-0 flex items-center gap-2">
+                <span class="text-[var(--accent)]">05 /</span> DEVELOPMENT TOOLS
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-badge primary">Git</span>
+                <span class="tech-badge">GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="border-l border-[var(--border-light)] pl-5">
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1.5">Studying</div>
+            <div class="font-heading text-sm tracking-wider">BSIT — SAINT LOUIS COLLEGE</div>
+          </div>
+          <div class="border-l border-[var(--border-light)] pl-5">
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1.5">Focus</div>
+            <div class="font-heading text-sm tracking-wider">WEB · SYSTEMS · APPS</div>
+          </div>
+          <div class="border-l border-[var(--border-light)] pl-5">
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1.5">Hometown</div>
+            <div class="font-heading text-sm tracking-wider">SAN FERNANDO CITY, LU</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex flex-col items-center lg:items-end gap-6 reveal" style="--delay:.15s">
+        <div class="flip-card select-none w-full max-w-[440px]" id="profileFlip">
+          <div class="flip-card-inner">
+            <!-- FRONT FACE: Nature Portrait (profile.png) -->
+            <div class="flip-face info-card notch-corner flex flex-col group border-[var(--border)] hover:border-[var(--accent)] transition-all duration-300">
+              <div class="profile-img-wrap relative">
+                <img id="portraitImg" src="images/profile.png" alt="Vince Alvendia — BSIT Student & Developer" class="w-full h-full object-cover object-top">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30 pointer-events-none"></div>
+                <div class="scan-line opacity-30"></div>
+                
+                <div class="absolute top-3.5 left-3.5 flex items-center gap-2 px-2.5 py-1 bg-black/75 border border-white/10 font-mono text-[10px] text-[var(--accent)] tracking-[.2em] rounded-sm">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"></span>
+                  <span>/ BUILDER</span>
+                </div>
+                <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-black/75 border border-white/10 font-mono text-[10px] text-[var(--fg)] tracking-[.15em] rounded-sm">
+                  LA UNION, PH
+                </div>
+                <div class="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between">
+                  <div class="px-2.5 py-1 bg-black/80 border border-white/10 font-mono text-[9px] text-[var(--fg-dim)] tracking-wider rounded-sm">
+                    BSIT · SLC '26
+                  </div>
+                  <div class="flex items-center gap-1.5 px-2.5 py-1 bg-[var(--accent)] text-black font-mono text-[9px] font-bold tracking-widest uppercase rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                    <span>ONLINE</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between bg-[var(--bg-card)]">
+                <div>
+                  <h3 class="font-display text-3xl leading-none tracking-wide text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">VINCE ALVENDIA</h3>
+                  <p class="text-[var(--muted)] text-xs mt-2 font-heading tracking-wider uppercase">BSIT Student · Aspiring Developer</p>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-4 border-t border-[var(--border-light)]">
+                  <span class="font-mono text-[10px] text-[var(--muted)] tracking-[.15em]">CODING SINCE 2022</span>
+                  <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.15em] flex items-center gap-1.5 group-hover:translate-x-1 transition-transform">
+                    DOSSIER <i class="fas fa-arrow-rotate-right text-xs"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- BACK FACE: Matching Equal Position Photo (1774615691693.png) + Academic Placement Info -->
+            <div class="flip-face flip-back info-card notch-corner flex flex-col group border-[var(--accent)]/50 hover:border-[var(--accent)] transition-all duration-300">
+              <div class="profile-img-wrap relative">
+                <img src="images/1774615691693.png" alt="Vince Alvendia Close-up Portrait" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-black/30 pointer-events-none"></div>
+                <div class="scan-line opacity-30"></div>
+                
+                <div class="absolute top-3.5 left-3.5 flex items-center gap-2 px-2.5 py-1 bg-black/75 border border-white/10 font-mono text-[10px] text-[var(--accent)] tracking-[.2em] rounded-sm">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"></span>
+                  <span>/ DOSSIER</span>
+                </div>
+                <div class="absolute top-3.5 right-3.5 px-2.5 py-1 bg-black/75 border border-white/10 font-mono text-[10px] text-[var(--accent)] tracking-[.15em] rounded-sm font-bold">
+                  ID: BSIT-SLC-2027
+                </div>
+                <div class="absolute bottom-3 left-3.5 right-3.5 flex items-center justify-between">
+                  <div class="px-2.5 py-1 bg-black/80 border border-white/10 font-mono text-[9px] text-[var(--fg)] tracking-wider rounded-sm">
+                    SAINT LOUIS COLLEGE
+                  </div>
+                  <div class="flex items-center gap-1.5 px-2.5 py-1 bg-[var(--accent)]/20 border border-[var(--accent)]/60 text-[var(--accent)] font-mono text-[9px] font-bold tracking-widest uppercase rounded-sm">
+                    VERIFIED
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 flex-1 flex flex-col justify-between bg-[var(--bg-card)]">
+                <div>
+                  <h3 class="font-display text-2xl leading-tight tracking-wide text-[var(--accent)]">OJT &amp; INTERNSHIP 2026–2027</h3>
+                  <p class="text-[var(--fg-dim)] text-xs mt-1.5 font-mono tracking-wider">PHP · MYSQL · JS · PYTHON · TAILWIND</p>
+                </div>
+                <div class="flex items-center justify-between mt-4 pt-4 border-t border-[var(--border-light)]">
+                  <span class="font-mono text-[10px] text-[var(--muted)] tracking-[.15em]">SAN FERNANDO CITY, LU</span>
+                  <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.15em] flex items-center gap-1.5">
+                    PHOTO <i class="fas fa-arrow-rotate-left text-xs"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GITHUB CONTRIBUTION ACTIVITY HEATMAP (Fills the empty space below flip-card) -->
+        <div class="w-full max-w-[440px] info-card notch-corner p-4 md:p-5 border border-[var(--border)] bg-[var(--bg-card)] shadow-lg">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2">
+              <i class="fab fa-github text-[var(--accent)] text-sm"></i>
+              <span class="font-heading text-xs sm:text-sm text-[var(--fg)] tracking-wide font-bold">11,437 contributions in the last year</span>
+            </div>
+            <div class="flex items-center gap-1.5 font-mono text-[9px] text-[var(--muted)] tracking-widest uppercase bg-black/60 px-2 py-0.5 rounded border border-[var(--border-light)]">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-[#39d353] animate-pulse"></span>
+              <span class="text-[var(--fg-dim)]">ACTIVE</span>
+            </div>
+          </div>
+          
+          <div class="overflow-x-auto rounded border border-[var(--border-light)]/50 bg-[#07090d]/95 p-2 select-none shadow-inner">
+            <div class="min-w-[400px]">
+              <img src="images/github_contributions.svg" alt="GitHub Contribution Graph — 11,437 contributions in the last year" class="w-full h-auto block rounded" loading="lazy">
+            </div>
+          </div>
+          
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-[var(--border-light)] font-mono text-[9px] text-[var(--muted)] tracking-wider uppercase">
+            <span>SEPTEMBER 2025 → AUGUST 2026</span>
+            <span class="text-[var(--accent)]">ACTIVE COMMITS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="relative py-28 lg:py-36" id="capabilities">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+
+    <div class="reveal grid lg:grid-cols-12 gap-8 mb-16">
+      <div class="lg:col-span-7">
+        <div class="section-marker mb-6"><span>03 — Capabilities</span></div>
+        <h2 class="font-display text-6xl md:text-7xl lg:text-8xl leading-[0.9]">
+          FIVE DISCIPLINES.<br>
+          <span class="text-[var(--accent)]">ONE STANDARD.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex flex-col justify-end">
+        <p class="text-[var(--fg-dim)] text-base leading-relaxed">
+          Full-stack web &amp; mobile application engineering, from production React &amp; Laravel systems to cross-platform Flutter mobile applications and relational database architectures. Expand for the operating details.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal-stagger border-t border-[var(--border-light)]">
+
+      <!-- 01 WEB DEVELOPMENT -->
+      <div class="cap-item open">
+        <button class="cap-head" aria-expanded="true">
+          <span class="cap-num">01</span>
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 flex-1 min-w-0">
+            <span class="cap-title font-display text-3xl md:text-5xl leading-none">WEB DEVELOPMENT</span>
+            <span class="cap-tech font-mono text-[10px] md:text-[11px] text-[var(--muted)] tracking-[.14em] uppercase">HTML · CSS · JAVASCRIPT · REACT · PHP · LARAVEL</span>
+          </div>
+          <i class="fas fa-plus cap-icon"></i>
+        </button>
+        <div class="cap-body"><div class="cap-body-inner">
+          <div class="grid md:grid-cols-12 gap-6 pb-9 pl-10 md:pl-[3.6rem] pr-2">
+            <p class="md:col-span-6 text-[var(--fg-dim)] text-sm leading-relaxed">
+              Modern frontend and backend web architecture. Semantic HTML5, tailored CSS design systems, dynamic vanilla JavaScript, and modern component patterns with React, paired with rock-solid server-side scripting in PHP and Laravel. Built responsive, accessible, and fast.
+            </p>
+            <div class="md:col-span-5 md:col-start-8 flex flex-wrap gap-2 content-start">
+              <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span>
+              <span class="pill">React</span><span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">Tailwind</span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 02 WEB APPLICATIONS -->
+      <div class="cap-item">
+        <button class="cap-head" aria-expanded="false">
+          <span class="cap-num">02</span>
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 flex-1 min-w-0">
+            <span class="cap-title font-display text-3xl md:text-5xl leading-none">WEB APPLICATIONS</span>
+            <span class="cap-tech font-mono text-[10px] md:text-[11px] text-[var(--muted)] tracking-[.14em] uppercase">REACT · LARAVEL · PHP · REST API · FULL-STACK DEVELOPMENT</span>
+          </div>
+          <i class="fas fa-plus cap-icon"></i>
+        </button>
+        <div class="cap-body"><div class="cap-body-inner">
+          <div class="grid md:grid-cols-12 gap-6 pb-9 pl-10 md:pl-[3.6rem] pr-2">
+            <p class="md:col-span-6 text-[var(--fg-dim)] text-sm leading-relaxed">
+              End-to-end full-stack web systems engineering. Scalable multi-role authentication, RESTful API architecture, client-side state management, and real-time database transactions built for production client portals, dashboards, and enterprise platforms.
+            </p>
+            <div class="md:col-span-5 md:col-start-8 flex flex-wrap gap-2 content-start">
+              <span class="pill">React</span><span class="pill">Laravel</span><span class="pill">PHP</span>
+              <span class="pill">REST API</span><span class="pill">Full-Stack</span><span class="pill">Auth Systems</span><span class="pill">CRUD</span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 03 MOBILE DEVELOPMENT -->
+      <div class="cap-item">
+        <button class="cap-head" aria-expanded="false">
+          <span class="cap-num">03</span>
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 flex-1 min-w-0">
+            <span class="cap-title font-display text-3xl md:text-5xl leading-none">MOBILE DEVELOPMENT</span>
+            <span class="cap-tech font-mono text-[10px] md:text-[11px] text-[var(--muted)] tracking-[.14em] uppercase">FLUTTER · DART · ANDROID APPLICATION DEVELOPMENT</span>
+          </div>
+          <i class="fas fa-plus cap-icon"></i>
+        </button>
+        <div class="cap-body"><div class="cap-body-inner">
+          <div class="grid md:grid-cols-12 gap-6 pb-9 pl-10 md:pl-[3.6rem] pr-2">
+            <p class="md:col-span-6 text-[var(--fg-dim)] text-sm leading-relaxed">
+              Cross-platform and native Android mobile applications engineered with Flutter and Dart. Smooth 60fps mobile interfaces, reactive state management, offline local storage caching, API integration, and mobile user experience optimization.
+            </p>
+            <div class="md:col-span-5 md:col-start-8 flex flex-wrap gap-2 content-start">
+              <span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">Android Dev</span>
+              <span class="pill">Mobile UI</span><span class="pill">State Management</span><span class="pill">Cross-Platform</span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 04 PROGRAMMING CORE -->
+      <div class="cap-item">
+        <button class="cap-head" aria-expanded="false">
+          <span class="cap-num">04</span>
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 flex-1 min-w-0">
+            <span class="cap-title font-display text-3xl md:text-5xl leading-none">PROGRAMMING CORE</span>
+            <span class="cap-tech font-mono text-[10px] md:text-[11px] text-[var(--muted)] tracking-[.14em] uppercase">PYTHON · JAVA · OBJECT-ORIENTED PROGRAMMING · DATA STRUCTURES</span>
+          </div>
+          <i class="fas fa-plus cap-icon"></i>
+        </button>
+        <div class="cap-body"><div class="cap-body-inner">
+          <div class="grid md:grid-cols-12 gap-6 pb-9 pl-10 md:pl-[3.6rem] pr-2">
+            <p class="md:col-span-6 text-[var(--fg-dim)] text-sm leading-relaxed">
+              Core computer science fundamentals and algorithmic problem solving in Python and Java. Robust Object-Oriented Programming (OOP) architectures, design patterns, clean code modularity, and data structure implementations engineered for high efficiency.
+            </p>
+            <div class="md:col-span-5 md:col-start-8 flex flex-wrap gap-2 content-start">
+              <span class="pill">Python</span><span class="pill">Java</span><span class="pill">OOP</span>
+              <span class="pill">Data Structures</span><span class="pill">Algorithms</span><span class="pill">Git</span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 05 DATABASES & SYSTEMS -->
+      <div class="cap-item">
+        <button class="cap-head" aria-expanded="false">
+          <span class="cap-num">05</span>
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6 flex-1 min-w-0">
+            <span class="cap-title font-display text-3xl md:text-5xl leading-none">DATABASES &amp; SYSTEMS</span>
+            <span class="cap-tech font-mono text-[10px] md:text-[11px] text-[var(--muted)] tracking-[.14em] uppercase">MYSQL · SQL · DATABASE DESIGN · SYSTEM DEVELOPMENT</span>
+          </div>
+          <i class="fas fa-plus cap-icon"></i>
+        </button>
+        <div class="cap-body"><div class="cap-body-inner">
+          <div class="grid md:grid-cols-12 gap-6 pb-9 pl-10 md:pl-[3.6rem] pr-2">
+            <p class="md:col-span-6 text-[var(--fg-dim)] text-sm leading-relaxed">
+              Relational database design, normalization (1NF–3NF), query optimization, and full-lifecycle software development (SDLC). Architecting information systems that handle real users, audit trails, secure transactions, and relational data integrity.
+            </p>
+            <div class="md:col-span-5 md:col-start-8 flex flex-wrap gap-2 content-start">
+              <span class="pill">MySQL</span><span class="pill">SQL</span><span class="pill">Database Design</span>
+              <span class="pill">Normalization</span><span class="pill">SDLC</span><span class="pill">System Architecture</span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WORDS -->
+<section class="relative py-28 lg:py-36 border-t border-[var(--border)] bg-[var(--bg-darker)] overflow-hidden" id="words">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10 mb-14">
+    <div class="reveal grid lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-7">
+        <div class="section-marker mb-6"><span>04 — Field Reports</span></div>
+        <h2 class="font-display text-6xl md:text-7xl lg:text-8xl leading-[0.9]">
+          PEOPLE TALK.<br>
+          <span class="text-stroke">PROOF IS</span><br>
+          <span class="text-[var(--accent)]">LOUDER.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 flex flex-col justify-end gap-5">
+        <p class="text-[var(--fg-dim)] text-base leading-relaxed">
+          From professors, teammates, and the people who've used what I built.
+          Drag the reel or let it run.
+        </p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3 font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)] animate-pulse"></span>
+            <span>Continuous Slide · Drag to Explore</span>
+          </div>
+          <div class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]" id="tCounter">01 / 06</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-wrap" id="carouselWrap">
+    <div class="t-track">
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 01</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">1.00 GRADE</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Vince doesn't submit requirements. He submits arguments for a higher grade — and usually wins them."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="RV" src="" class="w-11 h-11 rounded-full object-cover" alt="Professor">
+          <div>
+            <div class="font-heading text-sm tracking-wider">PROF. R. VILLANUEVA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Faculty — SLC IT Program</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 02</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">TEAM MVP</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "He debugged our capstone at 2AM while the rest of us slept, then documented the fix so we'd never break it again."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="JM" src="" class="w-11 h-11 rounded-full object-cover" alt="Teammate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">J. MANALO</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Capstone Teammate — BSIT</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 03</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">WEEKEND BUILD</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Asked for a simple org page, got a full site in one weekend, plus a tutorial so the next officers can maintain it."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="KR" src="" class="w-11 h-11 rounded-full object-cover" alt="Org president">
+          <div>
+            <div class="font-heading text-sm tracking-wider">K. RIVERA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">President — IT Student Society</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 04</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">24/7 DEBUG</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "The guy you message at midnight when your code breaks. Replies with the answer, never the attitude."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="MG" src="" class="w-11 h-11 rounded-full object-cover" alt="Classmate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">M. GARCIA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Classmate — BSIT</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 05</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">TOP 5 · HACK</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Forty-eight hours, four teammates, one working prototype. He ran the frontend like he'd done this before."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="DA" src="" class="w-11 h-11 rounded-full object-cover" alt="Hackathon teammate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">D. AQUINO</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Hackathon Teammate</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 06</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">FIRST CLIENT</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "This kid turned our store's inventory notebook into a real system. Now he updates it without being asked."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="LA" src="" class="w-11 h-11 rounded-full object-cover" alt="Store proprietor">
+          <div>
+            <div class="font-heading text-sm tracking-wider">L. ALVENDIA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Proprietor — Family Store</div>
+          </div>
+        </div>
+      </div></article>
+
+      <!-- DUPLICATE LOOP FOR SEAMLESS INFINITE RIGHT-TO-LEFT SLIDE -->
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 01</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">1.00 GRADE</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Vince doesn't submit requirements. He submits arguments for a higher grade — and usually wins them."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="RV" src="" class="w-11 h-11 rounded-full object-cover" alt="Professor">
+          <div>
+            <div class="font-heading text-sm tracking-wider">PROF. R. VILLANUEVA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Faculty — SLC IT Program</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 02</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">TEAM MVP</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "He debugged our capstone at 2AM while the rest of us slept, then documented the fix so we'd never break it again."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="JM" src="" class="w-11 h-11 rounded-full object-cover" alt="Teammate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">J. MANALO</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Capstone Teammate — BSIT</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 03</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">WEEKEND BUILD</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Asked for a simple org page, got a full site in one weekend, plus a tutorial so the next officers can maintain it."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="KR" src="" class="w-11 h-11 rounded-full object-cover" alt="Org president">
+          <div>
+            <div class="font-heading text-sm tracking-wider">K. RIVERA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">President — IT Student Society</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 04</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">24/7 DEBUG</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "The guy you message at midnight when your code breaks. Replies with the answer, never the attitude."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="MG" src="" class="w-11 h-11 rounded-full object-cover" alt="Classmate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">M. GARCIA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Classmate — BSIT</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 05</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">TOP 5 · HACK</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "Forty-eight hours, four teammates, one working prototype. He ran the frontend like he'd done this before."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="DA" src="" class="w-11 h-11 rounded-full object-cover" alt="Hackathon teammate">
+          <div>
+            <div class="font-heading text-sm tracking-wider">D. AQUINO</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Hackathon Teammate</div>
+          </div>
+        </div>
+      </div></article>
+
+      <article class="t-card" aria-hidden="true"><div class="p-7 h-full flex flex-col">
+        <div class="flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] text-[var(--accent)] tracking-[.2em]">FIELD REPORT / 06</span>
+          <span class="px-2 py-1 bg-[var(--accent)] text-black font-mono text-[10px] tracking-[.15em]">FIRST CLIENT</span>
+        </div>
+        <p class="font-heading text-xl md:text-2xl leading-snug text-[var(--fg)]">
+          "This kid turned our store's inventory notebook into a real system. Now he updates it without being asked."
+        </p>
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center gap-4">
+          <img data-ii="LA" src="" class="w-11 h-11 rounded-full object-cover" alt="Store proprietor">
+          <div>
+            <div class="font-heading text-sm tracking-wider">L. ALVENDIA</div>
+            <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.12em] mt-0.5">Proprietor — Family Store</div>
+          </div>
+        </div>
+      </div></article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="relative py-28 lg:py-36" id="contact">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+
+      <div class="lg:col-span-5 reveal">
+        <div class="section-marker mb-6"><span>05 — Transmission</span></div>
+        <h2 class="font-display text-6xl md:text-7xl leading-[0.9] mb-10">
+          LET'S BUILD<br>
+          SOMETHING<br>
+          <span class="text-[var(--accent)]">REAL.</span>
+        </h2>
+
+        <div class="space-y-6 mb-10">
+          <div class="flex items-start gap-4">
+            <i class="fas fa-location-dot text-[var(--accent)] mt-1 w-4"></i>
+            <div>
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Base</div>
+              <div class="font-heading text-sm tracking-wider">San Fernando City, La Union — open to on-site or remote OJT</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fas fa-clock text-[var(--accent)] mt-1 w-4"></i>
+            <div>
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Local time</div>
+              <div class="font-heading text-sm tracking-wider tabular-nums"><span class="js-clock">--:--:--</span> PHT</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="rec-dot inline-block mt-1.5 shrink-0" style="width:.6rem;height:.6rem;background:var(--accent);border-radius:50%;"></span>
+            <div>
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Status</div>
+              <div class="font-heading text-sm tracking-wider">Open for OJT &amp; internships — AY 2026–2027</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-[var(--border-light)] pt-8 mb-8">
+          <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-4">Elsewhere</div>
+          <div class="flex flex-wrap gap-2.5">
+            <a href="mailto:vnce.alvendia@gmail.com" class="pill link-underline">vnce.alvendia@gmail.com</a>
+            <a href="https://github.com/vinzz-yy" target="_blank" rel="noopener noreferrer" class="pill flex items-center gap-2">GitHub <i class="fas fa-arrow-up-right-from-square text-[10px] text-[var(--muted)]"></i></a>
+            <a href="https://www.linkedin.com/in/vince-alvendia-28a119348/" target="_blank" rel="noopener noreferrer" class="pill flex items-center gap-2">LinkedIn <i class="fas fa-arrow-up-right-from-square text-[10px] text-[var(--muted)]"></i></a>
+            <a href="https://www.facebook.com/vnce.ramosalvendia" target="_blank" rel="noopener noreferrer" class="pill flex items-center gap-2">Facebook <i class="fas fa-arrow-up-right-from-square text-[10px] text-[var(--muted)]"></i></a>
+          </div>
+        </div>
+
+        <button id="printResume" class="flex items-center gap-3 font-heading text-xs tracking-[.2em] uppercase text-[var(--fg-dim)] hover:text-[var(--accent)] transition-colors border border-[var(--border-light)] hover:border-[var(--accent)] px-6 py-3.5">
+          <i class="fas fa-print text-xs"></i> Save résumé as PDF
+        </button>
+      </div>
+
+      <div class="lg:col-span-6 lg:col-start-7 reveal" style="--delay:.15s">
+        <div class="frame-corners notch-corner p-7 md:p-10">
+          <div class="section-marker mb-8"><span>Opportunity Intake</span></div>
+
+          <form id="contactForm" novalidate>
+            <div class="grid md:grid-cols-2 gap-x-8 gap-y-2 mb-6">
+              <div><input type="text" id="fName" class="form-input" placeholder="Your name" autocomplete="name"></div>
+              <div><input type="email" id="fEmail" class="form-input" placeholder="Email address" autocomplete="email"></div>
+            </div>
+            <div class="mb-8">
+              <input type="text" id="fOrg" class="form-input" placeholder="Company / school (optional)">
+            </div>
+
+            <div class="mb-8 relative" id="oppDropdownContainer">
+              <div class="font-mono text-[10px] text-[var(--muted)] tracking-[.2em] uppercase mb-2.5">Opportunity type</div>
+              
+              <input type="hidden" id="fOppType" name="opportunityType" value="OJT / Internship">
+              
+              <button type="button" id="oppDropdownBtn" class="opp-dropdown-trigger flex items-center justify-between w-full py-3.5 px-4 border border-[var(--border-light)] hover:border-[var(--accent)] bg-[var(--bg-card)] text-[var(--fg)] font-heading text-sm tracking-wider uppercase transition-all rounded-sm cursor-pointer" aria-haspopup="listbox" aria-expanded="false">
+                <span class="flex items-center gap-2.5" id="oppDropdownLabel">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]"></span>
+                  <span>OJT / Internship</span>
+                </span>
+                <i class="fas fa-chevron-down text-xs text-[var(--muted)] transition-transform duration-300" id="oppDropdownChevron"></i>
+              </button>
+
+              <!-- Dropdown Menu -->
+              <div id="oppDropdownMenu" class="opp-dropdown-menu absolute top-[calc(100%+6px)] left-0 right-0 z-30 bg-[var(--bg-card)] border border-[var(--border-light)] shadow-[0_12px_30px_rgba(0,0,0,0.4)] opacity-0 pointer-events-none translate-y-2 transition-all duration-200 rounded-sm overflow-hidden" role="listbox">
+                <div class="py-1">
+                  <button type="button" class="opp-option selected flex items-center justify-between w-full px-4 py-3 text-left font-heading text-xs tracking-wider uppercase hover:bg-[var(--accent)]/10 hover:text-[var(--accent)] text-[var(--fg)] transition-colors" data-value="OJT / Internship">
+                    <span>OJT / Internship</span>
+                    <i class="fas fa-check text-[var(--accent)] text-xs check-icon"></i>
+                  </button>
+                  <button type="button" class="opp-option flex items-center justify-between w-full px-4 py-3 text-left font-heading text-xs tracking-wider uppercase hover:bg-[var(--accent)]/10 hover:text-[var(--accent)] text-[var(--fg)] transition-colors" data-value="Part-time">
+                    <span>Part-time</span>
+                    <i class="fas fa-check text-[var(--accent)] text-xs check-icon hidden"></i>
+                  </button>
+                  <button type="button" class="opp-option flex items-center justify-between w-full px-4 py-3 text-left font-heading text-xs tracking-wider uppercase hover:bg-[var(--accent)]/10 hover:text-[var(--accent)] text-[var(--fg)] transition-colors" data-value="Project">
+                    <span>Project</span>
+                    <i class="fas fa-check text-[var(--accent)] text-xs check-icon hidden"></i>
+                  </button>
+                  <button type="button" class="opp-option flex items-center justify-between w-full px-4 py-3 text-left font-heading text-xs tracking-wider uppercase hover:bg-[var(--accent)]/10 hover:text-[var(--accent)] text-[var(--fg)] transition-colors" data-value="Collaboration">
+                    <span>Collaboration</span>
+                    <i class="fas fa-check text-[var(--accent)] text-xs check-icon hidden"></i>
+                  </button>
+                  <button type="button" class="opp-option flex items-center justify-between w-full px-4 py-3 text-left font-heading text-xs tracking-wider uppercase hover:bg-[var(--accent)]/10 hover:text-[var(--accent)] text-[var(--fg)] transition-colors" data-value="Full-time Junior Role">
+                    <span>Full-time Junior Role</span>
+                    <i class="fas fa-check text-[var(--accent)] text-xs check-icon hidden"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <textarea id="fMsg" rows="4" class="form-input resize-none" placeholder="Tell me what needs building"></textarea>
+            </div>
+
+            <button type="submit" class="w-full md:w-auto flex items-center justify-center gap-3 font-heading text-sm tracking-[.2em] uppercase text-black bg-[var(--accent)] px-10 py-4 hover:bg-white transition-colors">
+              Send Transmission <i class="fas fa-paper-plane text-xs"></i>
+            </button>
+            <p class="form-status" id="formStatus" role="alert"></p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-[var(--border)] bg-[var(--bg-darker)] pt-16 pb-8">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
+      <div>
+        <div class="font-display text-[15vw] lg:text-[9vw] leading-[0.8]">
+          VINCE <span class="text-stroke">ALVENDIA</span>
+        </div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.25em] uppercase mt-4">
+          BSIT — Saint Louis College · San Fernando City, La Union
+        </div>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.25em] uppercase mt-1">
+          Learn · Build · Repeat · no shortcuts, no templates
+        </div>
+      </div>
+      <button id="toTop" class="flex items-center gap-3 font-heading text-xs tracking-[.2em] uppercase text-[var(--fg-dim)] hover:text-[var(--accent)] transition-colors border border-[var(--border-light)] hover:border-[var(--accent)] px-6 py-3.5 self-start lg:self-auto">
+        Back to top <i class="fas fa-arrow-up text-xs"></i>
+      </button>
+    </div>
+    <div class="border-t border-[var(--border-light)] pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-mono text-[10px] text-[var(--muted)] tracking-[.15em] uppercase">
+      <span>© 2026 Vince Alvendia · built by hand, no templates</span>
+      <span>La Union, PH · <span class="js-clock">--:--:--</span> PHT</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Project modal -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel notch-corner" id="modalPanel">
+    <button class="modal-close" data-close>Close <i class="fas fa-xmark"></i></button>
+
+    <div class="grid lg:grid-cols-2">
+      <div class="modal-media relative overflow-hidden min-h-[280px] border-b lg:border-b-0 lg:border-r border-[var(--border)]">
+        <img id="mImg" src="" alt="">
+        <div class="scan-line"></div>
+      </div>
+
+      <div class="modal-body p-7 lg:p-10 flex flex-col">
+        <div class="font-mono text-[11px] text-[var(--accent)] tracking-[.25em] mb-4" id="mIndex">01 / 06</div>
+        <h3 class="font-display text-5xl lg:text-6xl leading-none mb-2" id="mTitle"></h3>
+        <div class="font-mono text-[11px] text-[var(--muted)] tracking-[.2em] uppercase mb-6" id="mCat"></div>
+        <p class="text-[var(--fg-dim)] text-sm leading-relaxed mb-8" id="mDesc"></p>
+
+        <div class="grid grid-cols-2 gap-y-4 gap-x-6 mb-8 pb-8 border-b border-[var(--border-light)]">
+          <div>
+            <div class="font-mono text-[9px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">For</div>
+            <div class="font-heading text-sm tracking-wide" id="mClient"></div>
+          </div>
+          <div>
+            <div class="font-mono text-[9px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Year</div>
+            <div class="font-heading text-sm tracking-wide" id="mYear"></div>
+          </div>
+          <div>
+            <div class="font-mono text-[9px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Role</div>
+            <div class="font-heading text-sm tracking-wide" id="mRole"></div>
+          </div>
+          <div>
+            <div class="font-mono text-[9px] text-[var(--muted)] tracking-[.2em] uppercase mb-1">Stack</div>
+            <div class="font-heading text-sm tracking-wide" id="mStack"></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mb-8" id="mMetrics"></div>
+
+        <div class="mt-auto pt-6 border-t border-[var(--border-light)] flex items-center justify-between gap-4">
+          <button id="mPrev" class="flex items-center gap-3 font-heading text-xs tracking-[.2em] uppercase text-[var(--fg-dim)] hover:text-[var(--accent)] transition-colors">
+            <i class="fas fa-arrow-left text-xs"></i> Prev project
+          </button>
+          <button id="mNext" class="flex items-center gap-3 font-heading text-xs tracking-[.2em] uppercase text-[var(--fg-dim)] hover:text-[var(--accent)] transition-colors">
+            Next project <i class="fas fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="index.js"></script>
+</html>
