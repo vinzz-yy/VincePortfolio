@@ -1699,10 +1699,13 @@ document.querySelectorAll('.pill-group').forEach(group => {
 })();
 
 /* ---------- Print résumé ---------- */
-document.getElementById('printResume').addEventListener('click', () => {
-  showToast('RÉSUMÉ MODE', 'Choose "Save as PDF" in the print dialog for a clean one-pager.');
-  setTimeout(() => window.print(), 500);
-});
+const printResumeBtn = document.getElementById('printResume');
+if (printResumeBtn) {
+  printResumeBtn.addEventListener('click', () => {
+    showToast('RÉSUMÉ MODE', 'Choose "Save as PDF" in the print dialog for a clean one-pager.');
+    setTimeout(() => window.print(), 500);
+  });
+}
 
 /* ---------- Back to top ---------- */
 document.getElementById('toTop').addEventListener('click', () => {
