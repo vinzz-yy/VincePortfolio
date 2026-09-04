@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
@@ -42,10 +42,12 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   const url = `http://localhost:${PORT}`;
   console.log(`\n========================================`);
-  console.log(`  🚀 Server running securely at: ${url}`);
-  console.log(`  📁 Local file paths are now HIDDEN!`);
+  console.log(`  🚀 Server running at: ${url}`);
   console.log(`========================================\n`);
 
-  // Automatically open default browser on Windows
-  exec(`start ${url}`);
+  // Automatically open default browser only when running locally on Windows
+  if (process.platform === 'win32' && !process.env.PORT) {
+    exec(`start ${url}`);
+  }
 });
+
