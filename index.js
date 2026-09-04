@@ -1807,3 +1807,23 @@ document.getElementById('toTop').addEventListener('click', () => {
     });
   });
 })();
+
+// Smooth scrolling for internal anchor links (safe for file:// and http/https protocols)
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#' && targetId.length > 1) {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+          if (window.location.protocol !== 'file:') {
+            history.pushState(null, '', targetId);
+          }
+        }
+      }
+    });
+  });
+});
+
