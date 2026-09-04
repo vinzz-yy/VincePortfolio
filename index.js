@@ -45,14 +45,14 @@ const PROJECTS = [
   {
     title: 'INTAN ELYU', cat: 'SYSTEM — TOURISM MANAGEMENT', client: 'City Tourism Office · La Union', year: '2026',
     role: 'Full-Stack Developer & UI Architect', stack: ['Vanilla PHP', 'JavaScript', 'MySQL', 'Laravel'], ui: 'dashboard',
-    shot: 'project/Screenshot 2026-09-02 165851.png',
+    shot: 'project/IntanElyu.png',
     desc: 'An official tourism management portal and administrative system for La Union (Intan Elyu). Built for the City Tourism Office and PICTO to manage tourist destinations, track visitor arrivals, maintain secure administrator authentication, and provide a digital showcase for local spots like Tangadan Falls, surfing points, and heritage landmarks.',
     metrics: [['PICTO', 'official portal'], ['100%', 'audit trail'], ['20+', 'destinations logged']]
   },
   {
     title: 'SKY MALL WEB SYSTEM', cat: 'SYSTEM — COMMERCIAL SPACE LEASING', client: 'Commercial Space Manager · Manna Mall', year: '2026',
     role: 'Lead Developer & DB Architect', stack: ['React', 'Bootstrap', 'CSS', 'Python'], ui: 'dashboard',
-    shot: 'project/Screenshot 2026-09-02 170713.png',
+    shot: 'project/SkyMall.png',
     desc: 'A commercial space and lease management platform built for La Union Sky Mall (Manna Mall). Features tenant authentication, commercial unit allocation, automated lease schedule tracking, payment records, and an administrative dashboard for commercial property operations.',
     metrics: [['50+', 'commercial units'], ['0', 'manual logbooks'], ['Realtime', 'tenant portal']]
   },
